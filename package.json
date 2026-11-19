@@ -1,0 +1,19 @@
+{
+  "name": "schuifmaat",
+  "private": true,
+  "type": "module",
+  "module": "index.ts",
+  "scripts": {
+    "typecheck": "bun check",
+    "dev": "bun --watch src/index.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.28.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
