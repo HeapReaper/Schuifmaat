@@ -8,8 +8,8 @@ export async function registerCommands(guildId?: string): Promise<number> {
 
   const rest = new REST().setToken(process.env.DISCORD_TOKEN!);
   const route = guildId
-    ? Routes.applicationGuildCommands(process.env.CLIENT_ID!, guildId)
-    : Routes.applicationCommands(process.env.CLIENT_ID!);
+    ? Routes.applicationGuildCommands(process.env.DISCORD_CLIENT_ID!, guildId)
+    : Routes.applicationCommands(process.env.DISCORD_CLIENT_ID!);
 
   const data = (await rest.put(route, { body: commands })) as unknown[];
   return data.length;

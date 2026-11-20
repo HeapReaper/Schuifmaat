@@ -19,7 +19,7 @@ import {
 } from "./lib/handlers.ts";
 
 const client = new Client({
-  intents: [
+r intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.GuildPresences,

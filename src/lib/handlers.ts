@@ -31,6 +31,3 @@ export const loadTasks = () =>
       !!value?.name && !!value?.schedule && typeof value?.execute === "function",
     'task (needs "name", "schedule" and "execute")',
   );
-
-export const loadApiRoutes = () =>
-  loadDefaults("api", (value): value is ApiRoutes => typeof value === "function", "API route file");
